@@ -5,9 +5,12 @@
   </PropertyGroup>
 
   <Target Name="All" DependsOnTargets="Copy" />
-  
+
   <Target Name="Copy">
     <Copy SourceFiles="$(ZippedDir)\dbup3.zip" DestinationFiles="dbup3_$(BuildNumber).zip" />
     <Copy SourceFiles="$(ZippedDir)\Tasting.zip" DestinationFiles="Tasting_$(BuildNumber).zip" />
+    <Copy SourceFiles="$(ZippedDir)\TastingA.zip" DestinationFiles="TastingA_$(BuildNumber).zip" />
+    <Copy SourceFiles="$(ZippedDir)\TastingB.zip" DestinationFiles="TastingB_$(BuildNumber).zip" />
+    <Copy SourceFiles="$(ZippedDir)\TastingC.zip" DestinationFiles="TastingC_$(BuildNumber).zip" />
   </Target>
 </Project>
