@@ -1,0 +1,13 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BuildNumber>$(BUILD_NUMBER)</BuildNumber>
+    <ZippedDir>c:\ART</ZippedDir>
+  </PropertyGroup>
+
+  <Target Name="All" DependsOnTargets="Copy" />
+  
+  <Target Name="Copy">
+    <Copy SourceFiles="$(ZippedDir)\dubup3.zip" DestinationFiles="dubup3_$(BuildNumber).zip" />
+    <Copy SourceFiles="$(ZippedDir)\Tasting.zip" DestinationFiles="Tasting_$(BuildNumber).zip" />
+  </Target>
+</Project>
